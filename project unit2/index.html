@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fashion Assistant | Fashoinable</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav{
+            box-sizing: border-box;
+            padding-left: 30px;
+            display: flex;
+            width:100%;
+        }
+        .nav>img{
+            width:150px ;
+        }
+        .tag{
+            display: flex;
+            width: 45%;
+            align-items: center;
+            padding-left: 30px;
+            justify-content: space-around;
+        }
+        .tag>a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .btn{
+            
+            padding-left: 400px;
+            width: 23%;
+            display: flex;
+            justify-content: space-between;
+        align-items: center;
+        }
+        .btn>button{
+            border: none;
+            background-color: white;
+        }
+        .btn>input{
+            border: none;
+        }
+        .cont{ 
+           
+           width:75%;
+           margin: auto;
+           height: 600px;
+           background-image: url('./20221009_bg1.png');
+           background-size: cover;
+           display: flex;
+           justify-content: space-between;
+        }
+       
+    .imag{
+        padding-left: 50px;
+        width: 50%;
+        margin-top: 150px;
+        color: white;
+        }
+        .imag>h1{
+            font-size: 60px;
+        }
+        .imag>p{
+            font-size: 30px;
+        }
+        .imag>button{
+            padding: 10px;
+            color: white;
+            background-color: rgb(246, 33, 33);
+            border:none;
+
+        }
+        .jing{
+            padding-top:400px ;
+            width:30%;
+            color: white;
+            align-items:center;
+        }
+        .jing>p{
+          font-size: 25px;
+         /* background-color: #424242; */
+        } 
+        .cont1{
+            margin: auto;
+            width:75%;
+            background-color: #FFEBEE;
+            height: 500px;
+            display: flex;
+            padding-top: 150px;
+        }
+        .text{
+            width: 30%;
+            padding-left: 50px;
+        }
+        #upper{
+            font-size: 45px;
+            color: black;
+        }
+        #upper>span{
+            color: brown;
+        }
+        #lower{
+            font-size: 25px;
+        }
+        .text>a{
+            color: brown;
+            font-size: 22px;
+        }
+        .video{
+            width:50%;
+            margin: auto;
+            padding-bottom: 180px;
+        }
+        .video>video{
+            width:100%;
+        }
+        .partner{
+            padding-top: 50px;
+            margin: auto;
+            width:75%;
+            text-align: center;
+            color: black;
+            padding-bottom: 100px;
+        }
+        .brands{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 30px;
+        }
+        .name{
+            margin: auto;
+            width: 50%;
+        }
+
+        .name>h1{
+            font-size: 40px;
+            text-align: center;
+        }
+        .name>p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .divi1{
+            padding-top: 50px;
+            display: flex;
+            width: 75%;
+            margin: auto;
+        }
+        .divi1>div{
+            width: 45%;
+            margin: auto;
+        }
+        .compare{
+            padding-top: 40px;
+            width: 45%;
+            margin: auto;
+            text-align: center;
+        }
+        .compare>p{
+            font-size: 20px;
+        }
+        .compare>h1{
+            font-size: 40px;
+        }
+        .divi1 button{
+            background-color: white;
+            border: none;
+        }
+        #install{
+            border: 1px solid red;
+            color: red;
+            padding: 5px;
+        }
+        .divi1 p{
+            font-size: 20px;
+            width: 60%;
+        }
+        .divi1 h1{
+            width: 70%;
+            font-size: 35px;
+        }
+        .help{
+            
+            padding-top: 50px;
+            width:75%;
+            margin: auto;
+            margin-top: 90px;
+            background-image: url('https://cdn.modesens.com/static/img/20220915-bg2.png');
+            background-size: cover;
+            text-align: center;
+            height: 300px;
+        }
+       .help>h1{
+        /* margin: auto; */
+        color:white;
+        font-size: 45px;
+       }
+       .help>button{
+        background-color: red;
+        border:none;
+        color:white;
+        padding: 10px;
+        margin-top:30px ;
+        margin: auto;
+        font-size: 22px;
+       }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="./fashionable-logos_transparent.png" alt="">
+        <div class="tag">
+            <a href="">Women</a>
+            <a href="">Men</a>
+            <a href="">Beauty</a>
+            <a href="">Kids</a>
+            <a href="">Home</a>
+            <a href="">Designer</a>
+            <a href="">Community</a>
+            <a href="">Sale</a>
+        </div>
+        <div class="btn">
+            <select name="country" id="country">
+                <option value="india" >india</option>
+                <option value="america">america</option>
+                <option value="austria">austria</option>
+                <option value="australia" >australia</option>
+                <option value="belgium">belgium</option>
+                <option value="canada">canada</option>
+                <option value="china">china</option>
+                <option value="denmark">denmark</option>
+            </select>
+            <button><img src="https://cdn.modesens.com/static/img/prd-update-20191109.svg" alt=""></button>
+            <button><img src="https://cdn.modesens.com/static/img/20210601heart.svg" alt=""></button>
+            <button><img src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg" alt=""></button>
+            <button><img src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt=""></button>
+            <button><img src="https://cdn.modesens.com/static/img/20191109search_b.svg" alt=""> search</button>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="imag">
+           
+            <h1>CHECK FASHIONABLE BEFORE YOU BUY</h1>
+            <p>We’re not a store. We are your fashion shopping assistant.</p>
+            <button>JOIN FOR FREE</button>
+        </div>
+        <div class="jing">
+            <h1>JING</h1>
+            <p>Co-Founder & Fashion Director of Fashionable</p>
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="text">
+            <p id="upper">Compare 500+ Stores In <span>One</span> Place</p>
+            <p id="lower">Fashionable allows you to compare prices and availability across hundreds of stores and thousands of brands.</p>
+            <a href="">TRY IT OUT</a>
+        </div>
+        <div class="video">
+            <video preload="auto" muted="muted"  autoplay src="./Your Fashion Shopping Assistant _ ModeSens - Brave 2023-02-23 17-16-32.mp4"></video>
+        </div>
+    </div>
+    <div class="partner">
+        <div class="name">
+          <h1>500+ PREMIUM PARTNERS</h1>
+          <p>We only partner with the most reputable stores and brands to offer you the largest selections and most trustworthy shopping experience online.</p>
+        </div>
+        <div class="brands">
+            <img src="https://cdn.modesens.com/banner/20220708-SSENSE-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-NET-A-PORTER-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-FARFETCH-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-NORDSTROM-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-MATCHESFASHION-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-SAKS-FIFTH-AVENUE-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-MYTHERESA-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-SHOPBOP-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-ITALIST-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-CETTIRE-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-LUISAVIAROMA-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20220708-BROWNSFASHION-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-GUCCI-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-PRADA-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-SAINT-LAURENT-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-BOTTEGA-VENETA-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-BURBERRY-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-FENDI-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-VERSACE-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-BALENCIAGA-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-GIVENCHY-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-LOEWE-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-OFF-WHITE-logo.png" alt="">
+            <img src="https://cdn.modesens.com/banner/20211014-VALENTINO-logo.png" alt="">
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="text">
+        <p id="upper">Locate Any Product In <span>One</span> Second</p>
+        <p id="lower">Simply copy any product url and search it on ModeSens. Our patented technology helps you easily locate it on ModeSens and compare across 500+ partner stores.</p>
+        <a href="">TRY IT OUT</a>
+        </div>
+        <div class="video">
+            <video preload="auto" muted="muted"  autoplay src="./video-2.mp4"></video>
+        </div>
+    </div>
+    <div class="compare">
+        <h1>COMPARE AND SHOP WHEREVER YOU GO</h1>
+        <p>To unlock all of Fashionable' features and functionality, simply download our App and Browser Extension.</p>
+    </div>
+    <div class="divi1">
+        <div >
+            <h1>Install the Fashionable Browser Extension</h1>
+            <p>Automatically compare products across 500+ stores while you browse at any of our partner stores’ websites.</p>
+            <button id="install"> <img src="https://cdn.modesens.com/static/img/20190228chromelogo.png" alt=""> INSTALL NOW</button>
+        </div>
+        <div><img style="width: 100%;" src="https://cdn.modesens.com/static/img/20221231bg3_en.png" alt=""></div>
+    </div>
+    <div class="divi1" >
+        <div> <img  style="width: 100%;" src="https://cdn.modesens.com/static/img/20221231bg4_en.png" alt="">
+        </div>
+        <div  >
+            <h1>Download The Fashionable App</h1>
+            <p>Scan any bar code or tag on a product to compare across 500+ stores before you buy.</p>
+            <button> <img  style="width: 100%;" src="https://cdn.modesens.com/static/img/20220926download_ios.svg" alt=""></button>
+            <button style="margin-left: 30px;"> <img  style="width: 100%;" src="https://cdn.modesens.com/static/img/20220926download_android.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="help">
+        <h1>WE HAVE HELPED MILLIONS OF MEMBERS SAVE:</h1>
+        <h1> €339, 624, 869+</h1>
+        <button>JOIN NOW FOR FREE</button>
+    </div>
+</body>
+</html>
