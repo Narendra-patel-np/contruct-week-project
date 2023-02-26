@@ -358,10 +358,45 @@
             text-align: center;
             font-size: 22px;
         }
+        button:hover{
+            cursor: pointer;
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+        }
+        footer>div{
+            width: 18%;
+            margin: auto;
+            text-align: center;
+        }
+        footer p {
+        font-size: 20px;
+        }
+        footer a{
+            text-decoration: none;
+            color:grey;
+            display: block;
+            font-size: 18px;
+            margin: 5px;
+        }
+        footer a:hover{
+            text-decoration: underline;
+           
+        }
+        .connect>button{
+            border: none;
+        }
+        hr{
+            margin-top: 50px;
+        }
+        footer input{
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
-    <div class="nav">
+    <header class="nav">
         <img src="./fashionable-logos_transparent.png" alt="">
         <div class="tag">
             <a href="">Women</a>
@@ -390,7 +425,7 @@
             <button><img src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt=""></button>
             <button><img src="https://cdn.modesens.com/static/img/20191109search_b.svg" alt=""> search</button>
         </div>
-    </div>
+    </header>
     <div class="cont">
         <div class="imag">
            
@@ -524,5 +559,50 @@
     <p>Join Today to Unleash the Full Power of Fashionable</p>
     <button>Join Now For Free</button>
     </div>
+    <hr  id="top" color="black" size="2px" width="10000px">
+    <footer>
+        <div>
+            <p>CUSTOMER CARE</p>
+            <a href="">Shopper Protection</a>
+            <a href="">Loyalty Program</a>
+            <a href="">Help Center</a>
+            <a href="">Size Guides</a>
+            <a href="">Contact Us/ Feedback</a>
+            <a href="">Shipping/Returns</a>
+        </div>
+        <div>
+            <p>INFORMATION</p>
+            <a href="">About Us</a>
+            <a href="">Influencer Program</a>
+            <a href="">Partner Stores</a>
+            <a href="">Sitemap</a>
+        </div>
+        <div>
+            <p>LEGAL</p>
+            <a href="">Term Of Use</a>
+            <a href="">Disclosure</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Community Guidelines</a>
+        </div>
+        <div class="connect">
+            <p>CONNECT WITH US </p>
+            <button><img src="https://cdn.modesens.com/static/img/20220815download_ios.svg" alt=""></button>
+            <button><img src="https://cdn.modesens.com/static/img/20220815download_android.svg" alt=""></button>
+            <button><img src="https://cdn.modesens.com/static/img/20220815down_chromestrore.svg" alt=""></button>
+        </div>
+        <div>
+            <p>NEWSLETTER SIGN UP</p>
+            <input type="email" name="" placeholder="Email Address"
+            id="">
+            <br>
+            <input type="checkbox"  name="Women's">
+            <label for="">Women's</label>
+            <input type="checkbox"  name="Men's" id="">
+            <label for="">Men's</label>
+            <br>
+            <button type="submit">SUBMIT</button>
+        </div>
+    </footer>
+    <hr color="black" size="2px" width="10000px">
 </body>
 </html>
